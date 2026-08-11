@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติสสเมตเตยยมาณพปุจฉา - โสฬสปัญหา</title>
+    <style>
+        /* 
+           Architecture: "Majjhima Patipada" (The Middle Way)
+           - Minimalist design, pure semantic HTML.
+           - Emphasizing whitespace and readability.
+        */
+        @import url('https://fonts.googleapis.com/css2?family=Thasadith:wght@400;700&family=Trirong:wght@300;400&display=swap');
+
+        :root {
+            --bg-color: #f4efe8; /* สีเปลือกไม้จางๆ สงบและสบายตา */
+            --text-main: #2c2b29; /* สีหมึกเข้ม แต่อ่อนกว่าดำสนิท */
+            --accent-color: #a65c32; /* สีจีวรย้อมแก่นขนุน */
+            --border-color: #e3ddd3;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Thasadith', sans-serif;
+            line-height: 1.85;
+            display: flex;
+            justify-content: center;
+            padding: 2rem 1rem;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        .container {
+            max-width: 720px;
+            width: 100%;
+            background: #ffffff;
+            padding: 3.5rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+            border-top: 5px solid var(--accent-color);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        h1, h2 {
+            font-family: 'Trirong', serif;
+            font-weight: 400;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .citation {
+            font-size: 0.9rem;
+            color: #7a756d;
+            letter-spacing: 0.5px;
+        }
+
+        .dialogue-section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            margin-bottom: 1.2rem;
+            color: #4a463e;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 2px;
+            background-color: var(--accent-color);
+            margin-right: 12px;
+        }
+
+        .dialogue {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            border-left: 3px solid var(--border-color);
+        }
+
+        .speaker {
+            font-weight: bold;
+            color: var(--accent-color);
+            display: block;
+            margin-bottom: 0.3rem;
+            font-family: 'Trirong', serif;
+        }
+
+        .text {
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .commentary {
+            background-color: #fbf9f6;
+            padding: 1.5rem 2rem;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            color: #5c5851;
+            margin-top: 1.5rem;
+        }
+
+        .commentary strong {
+            color: var(--accent-color);
+        }
+
+        /* Smooth text rendering for poetic flow */
+        .ehipassiko {
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 2rem 1.5rem; }
+            h1 { font-size: 1.8rem; }
+            .text { font-size: 1.05rem; }
+        }
+    </style>
+</head>
+<body class="ehipassiko">
+
+    <div class="container">
+        <header>
+            <h1>ติสสเมตเตยยมาณพปุจฉา</h1>
+            <p class="citation">จาก โสฬสปัญหา ปารายนวรรค สุตตนิบาต ขุททกนิกาย พระสุตตันตปิฎก</p>
+        </header>
+
+        <section class="dialogue-section">
+            <h2>ผู้สันโดษและไร้ความหวั่นไหว</h2>
+            <div class="dialogue">
+                <span class="speaker">ติสสเมตเตยยมาณพ :</span>
+                <p class="text">"ใครในโลกนี้ เป็นผู้สันโดษ? ความหวั่นไหวไม่มีแก่ใคร? ใครรู้ส่วนสุดทั้งสองด้วยปัญญาแล้ว ไม่ติดอยู่ในท่ามกลาง? ใครคือมหาบุรุษ? และใครในโลกนี้ก้าวล่วงตัณหาเครื่องร้อยรัดได้?"</p>
+            </div>
+            <div class="dialogue">
+                <span class="speaker">พระพุทธเจ้า :</span>
+                <p class="text">"ภิกษุผู้ประพฤติพรหมจรรย์ ปราศจากความกำหนัดในกามทั้งหลาย มีสติระลึกได้ทุกเมื่อ รู้แจ้งธรรมแล้วดับกิเลสได้ ความหวั่นไหวย่อมไม่มีแก่ภิกษุนั้น"</p>
+            </div>
+            <div class="commentary">
+                <strong>อรรถาธิบาย:</strong> ในยุคที่เต็มไปด้วยสิ่งเร้า "ความหวั่นไหว" กลายเป็นทุกข์พื้นฐานของมนุษย์ การประพฤติพรหมจรรย์และถอนความกำหนัดยินดีได้ด้วย "สติ" คือวิถีทางแห่งความสันโดษอันแท้จริง ทำให้จิตสงบนิ่งไร้ระลอกคลื่น (Zero-agitation)
+            </div>
+        </section>
+
+        <section class="dialogue-section">
+            <h2>มหาบุรุษผู้ข้ามพ้น</h2>
+            <div class="dialogue">
+                <span class="speaker">พระพุทธเจ้า (ตรัสต่อ) :</span>
+                <p class="text">"ภิกษุนั้นรู้ส่วนสุดทั้งสองด้วยปัญญาแล้ว ไม่ติดอยู่ในท่ามกลาง เรากล่าวว่าภิกษุนั้นแลเป็น 'มหาบุรุษ' ภิกษุนั้นแลก้าวล่วงตัณหาเครื่องร้อยรัดในโลกนี้ได้แล้ว"</p>
+            </div>
+            <div class="commentary">
+                <strong>อรรถาธิบาย:</strong> การข้ามพ้น "ส่วนสุดทั้งสอง" คือการไม่หลงในอดีต ไม่พะวงถึงอนาคต หรือการไม่สุดโต่งไปในทางกามสุขัลลิกานุโยคและอัตตกิลมถานุโยค ผู้ที่เจริญวิถีแห่ง "มัชฌิมาปฏิปทา" จนจิตเป็นอิสระ ไม่ติดแม้แต่ในปัจจุบันขณะ นั่นแลคือมหาบุรุษผู้หลุดพ้นจากตัณหาอย่างแท้จริง
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
